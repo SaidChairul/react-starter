@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-sandybrown-color: #f4d53f;
+}
+
+.main-sandybrown-color {
+  color: var(--main-sandybrown-color);
+}
+
 html {
   font-size: 10px;
 }
@@ -34,4 +42,26 @@ html {
 .frame {
   border: 1px solid #484848;
   height: 100%;
+}
+
+.sc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sc-btn {
+  font-size: 1.8rem;
+  font-family: "Russo One", sans-serif;
+  background: unset;
+  border: unset;
+  outline: unset;
+  padding: 24px;
+}
+
+.sc-title {
+  font-size: 3.6rem;
+  font-family: "Great Vibes", cursive;
+  text-transform: lowercase;
+  font-weight: 100;
 }
