@@ -31,22 +31,22 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.container {
-  width: 600px;
+.sc-container {
+  width: 500px;
   height: 600px;
   background: #f2eecb;
   border-radius: 4px;
   padding: 32px;
 }
 
-.frame {
+.sc-frame {
   border: 1px solid #484848;
   height: 100%;
 }
 
 .sc-header {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: flex-start;
 }
 
@@ -56,7 +56,8 @@ html {
   background: unset;
   border: unset;
   outline: unset;
-  padding: 24px;
+  padding: 16px;
+  cursor: pointer;
 }
 
 .sc-title {
@@ -64,4 +65,38 @@ html {
   font-family: "Great Vibes", cursive;
   text-transform: lowercase;
   font-weight: 100;
+  flex: 1;
+  text-align: center;
+}
+
+.sc-add {
+  padding: 16px;
+}
+
+.sc-addForm {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sc-addInput {
+  background: unset;
+  border: unset;
+  padding: 0 64px;
+  flex: 1;
+  border-bottom: 1px solid var(--main-sandybrown-color);
+  outline: unset;
+  font-family: "Great Vibes", cursive;
+  font-size: 24px;
+  text-transform: lowercase;
+}
+
+.sc-addBtn {
+  font-size: 1.8rem;
+  font-family: "Russo One", sans-serif;
+  padding: 16px;
+  padding-right: unset;
+  cursor: pointer;
+  background: unset;
+  border: unset;
+  outline: unset;
 }
