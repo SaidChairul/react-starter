@@ -10,65 +10,93 @@
       href="https://fonts.googleapis.com/css?family=Great+Vibes|Russo+One&display=swap"
       rel="stylesheet"
     />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
   </head>
   <body>
-    <div class="sc-container main-darkslategray-color">
-      <div class="sc-frame main-darkslategray-color">
-        <section class="sc-header">
-          <button class="sc-headerBtn main-darkslategray-color">ADD</button>
-          <h1 class="sc-title">Todo List</h1>
-          <button class="sc-headerBtn main-sandybrown-color">CLEAR</button>
-        </section>
+    <!-- sebagai tempat react component berada -->
+    <div id="root"></div>
 
-        <section class="sc-add">
-          <form action="" class="sc-addForm">
-            <input type="text" class="sc-addInput" />
-            <button class="sc-addBtn main-darkslategray-color">Add</button>
-          </form>
-        </section>
+    <script type="text/babel">
+      class App extends React.Component {
+        render() {
+          return (
+            <div class="sc-container main-darkslategray-color">
+              <div class="sc-frame main-darkslategray-color">
+                <section class="sc-header">
+                  <button class="sc-headerBtn main-darkslategray-color">
+                    ADD
+                  </button>
+                  <h1 class="sc-title">Todo List</h1>
+                  <button class="sc-headerBtn main-sandybrown-color">
+                    CLEAR
+                  </button>
+                </section>
 
-        <section class="sc-todos">
-          <div class="sc-todo">
-            <span class="sc-todoText">Learning React</span>
-          </div>
+                <section class="sc-add">
+                  <form action="" class="sc-addForm">
+                    <input type="text" class="sc-addInput" />
+                    <button class="sc-addBtn main-darkslategray-color">
+                      Add
+                    </button>
+                  </form>
+                </section>
 
-          <div class="sc-todo">
-            <span class="sc-todoText">Learning React</span>
-          </div>
+                <section class="sc-todos">
+                  <div class="sc-todo">
+                    <span class="sc-todoText">Learning React</span>
+                  </div>
 
-          <div class="sc-todo">
-            <span class="sc-todoText">Learning React</span>
-          </div>
+                  <div class="sc-todo">
+                    <span class="sc-todoText">Learning React</span>
+                  </div>
 
-          <div class="sc-todo">
-            <span class="sc-todoText">Learning React</span>
-          </div>
+                  <div class="sc-todo">
+                    <span class="sc-todoText">Learning React</span>
+                  </div>
 
-          <div class="sc-todo">
-            <span class="sc-todoText">Learning React</span>
-          </div>
+                  <div class="sc-todo">
+                    <span class="sc-todoText">Learning React</span>
+                  </div>
 
-          <div class="sc-todo">
-            <span class="sc-todoText">Learning React</span>
-          </div>
+                  <div class="sc-todo">
+                    <span class="sc-todoText">Learning React</span>
+                  </div>
 
-          <div class="sc-todo">
-            <span class="sc-todoText">Learning React</span>
-          </div>
+                  <div class="sc-todo">
+                    <span class="sc-todoText">Learning React</span>
+                  </div>
 
-          <div class="sc-todo">
-            <span class="sc-todoText">Learning React</span>
-          </div>
+                  <div class="sc-todo">
+                    <span class="sc-todoText">Learning React</span>
+                  </div>
 
-          <div class="sc-todo">
-            <span class="sc-todoText">Learning React</span>
-          </div>
+                  <div class="sc-todo">
+                    <span class="sc-todoText">Learning React</span>
+                  </div>
 
-          <div class="sc-todo">
-            <span class="sc-todoText">Learning React</span>
-          </div>
-        </section>
-      </div>
-    </div>
+                  <div class="sc-todo">
+                    <span class="sc-todoText">Learning React</span>
+                  </div>
+
+                  <div class="sc-todo">
+                    <span class="sc-todoText">Learning React</span>
+                  </div>
+                </section>
+              </div>
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
   </body>
 </html>
